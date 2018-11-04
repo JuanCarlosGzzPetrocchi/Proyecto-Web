@@ -5,14 +5,16 @@ CREATE TABLE maestro
 (
 id INT AUTO_INCREMENT PRIMARY KEY,
 nombre VARCHAR(150) NOT NULL,
-clave VARCHAR(150) NOT NULL
+clave VARCHAR(150) NOT NULL,
+CONSTRAINT UNIQUE (nombre)
 );
 
 CREATE TABLE estudiante
 (
 id INT AUTO_INCREMENT PRIMARY KEY,
 nombre VARCHAR(150) NOT NULL,
-clave VARCHAR(150) NOT NULL
+clave VARCHAR(150) NOT NULL,
+CONSTRAINT UNIQUE (nombre)
 );
 
 CREATE TABLE reporte
@@ -31,17 +33,15 @@ id INT AUTO_INCREMENT PRIMARY KEY,
 nombre VARCHAR(150) NOT NULL,
 horario VARCHAR(150) NOT NULL,
 maestroid INT NOT NULL,
-unionid INT NOT NULL,
-FOREIGN KEY(maestroid) REFERENCES maestro(id),
-FOREIGN KEY(unionid) REFERENCES union(id),
+FOREIGN KEY(maestroid) REFERENCES maestro(id)
 );
 
-CREATE TABLE union
+CREATE TABLE unionClaseEstudiante
 (
 id INT AUTO_INCREMENT PRIMARY KEY,
 claseid INT NOT NULL,
 estudianteid INT NOT NULL,
 calificacion INT NOT NULL,
 FOREIGN KEY(estudianteid) REFERENCES estudiante(id),
-FOREIGN KEY(claseid) REFERENCES clase(id),
+FOREIGN KEY(claseid) REFERENCES clase(id)
 );
