@@ -1,0 +1,47 @@
+CREATE DATABASE escuela;
+USE escuela;
+
+CREATE TABLE maestro
+(
+id INT AUTO_INCREMENT PRIMARY KEY,
+nombre VARCHAR(150) NOT NULL,
+clave VARCHAR(150) NOT NULL
+);
+
+CREATE TABLE estudiante
+(
+id INT AUTO_INCREMENT PRIMARY KEY,
+nombre VARCHAR(150) NOT NULL,
+clave VARCHAR(150) NOT NULL
+);
+
+CREATE TABLE reporte
+(
+id INT AUTO_INCREMENT PRIMARY KEY,
+descripcion VARCHAR(500) NOT NULL,
+maestroid INT NOT NULL,
+estudianteid INT NOT NULL,
+FOREIGN KEY(maestroid) REFERENCES maestro(id),
+FOREIGN KEY(estudianteid) REFERENCES estudiante(id)
+);
+
+CREATE TABLE clase
+(
+id INT AUTO_INCREMENT PRIMARY KEY,
+nombre VARCHAR(150) NOT NULL,
+horario VARCHAR(150) NOT NULL,
+maestroid INT NOT NULL,
+unionid INT NOT NULL,
+FOREIGN KEY(maestroid) REFERENCES maestro(id),
+FOREIGN KEY(unionid) REFERENCES union(id),
+);
+
+CREATE TABLE union
+(
+id INT AUTO_INCREMENT PRIMARY KEY,
+claseid INT NOT NULL,
+estudianteid INT NOT NULL,
+calificacion INT NOT NULL,
+FOREIGN KEY(estudianteid) REFERENCES estudiante(id),
+FOREIGN KEY(claseid) REFERENCES clase(id),
+);
