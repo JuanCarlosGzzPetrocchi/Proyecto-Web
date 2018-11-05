@@ -27,4 +27,6 @@
 
 <input type="submit" class="button"  name="ModificarClase" value="Modificar"/>
 
+<a href="../Vistas/modificarClase.php">Regresar</a>
+
 </body>

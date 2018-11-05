@@ -40,5 +40,6 @@ echo("Mission failed we'll get'em next time");
             </form>
         </div>
     </center>
+    <a href="../Vistas/VerReportes.php">Regresar</a>
 </body>
 </html>

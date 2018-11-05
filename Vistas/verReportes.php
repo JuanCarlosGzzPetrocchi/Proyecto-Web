@@ -33,6 +33,7 @@ echo "</table>";
     </head>
     <body>
 
-<a href="../Vistas/agregarreporte.php">Agregar Reporte</a>
+<a href="../Vistas/agregarreporte.php">Agregar Reporte</a><br>
+<a href="../Vistas/VistaPrincipalMaestro.html">Regresar</a>
 
 </body>

@@ -18,5 +18,6 @@
             </form>
         </div>
     </center>
+    <a href="../Vistas/modificarClase.php">Regresar</a>
 </body>
 </html>
