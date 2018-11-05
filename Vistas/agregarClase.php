@@ -1,3 +1,24 @@
+<?php
+$con=mysqli_connect("localhost","root","root","escuela");
+include_once 'dbConnect.php';
+
+
+if(isset($_POST['RegistrarClase'])) {
+$nombre = $_POST['nombre'];
+$horario = $_POST['horario'];
+$salon = $_POST['salon'];
+
+
+if(mysqli_query($con,"INSERT INTO clase(nombre,horario,salon,maestroid) VALUES ('$nombre','$horario','$salon','1')")){
+echo("clase registrado");
+header("Location: VerClases.php");
+}
+else{
+echo("Mission failed we'll get'em next time");
+}
+
+}
+?>
 <!DOCTYPE html">
 <html>
     <head>
