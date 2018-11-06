@@ -28,17 +28,12 @@ echo "<tr>
  "</td><td name='horario'>" . $row['horario'] . 
  "</td><td ='salon'>" . $row['salon'] .
  "</td><td>" . $row['maestroid'] . 
- "</td><td>" . "
-  <a href='../Vistas/modificarClase.php?id=$send'>Modificar</a>
-".
+ "</td><td>" . "<a href='../Vistas/modificarClase.php?id=$send'>Modificar</a>".
+ "</td><td>" . "<a href='../dataAccess/borrarclase.php?id=$send'>Borrar</a>".
 "</td></tr>";
-
-
 }
 
 echo "</table>";
-
-
 ?>
 
 
@@ -46,7 +41,7 @@ echo "</table>";
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Index</title>
+        <title>Ver Clases</title>
         
     </head>
     <body>

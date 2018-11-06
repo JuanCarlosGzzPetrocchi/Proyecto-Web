@@ -29,7 +29,7 @@ echo("Mission failed we'll get'em next time");
         <div id="registro">       
             <h3>Registro de Reporte</h3>
             <form method="post">
-                <label>Nombre</label>
+                <label>Descripcion de incidente</label>
                 <input type="text" name="descripcion" placeholder="Descripcion del reporte" required /><br>
                  <label>Alumno Responsable</label>
                  <select id="estudiante" name="estudiante">

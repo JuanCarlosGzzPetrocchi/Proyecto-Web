@@ -2,7 +2,7 @@
 $con=mysqli_connect("localhost","root","root","escuela");
 include_once 'dbConnect.php';
 
-$query = "SELECT descripcion, maestro.nombre AS maestro, estudiante.nombre AS estudiante FROM reporte JOIN maestro ON reporte.maestroid = maestro.id JOIN estudiante ON reporte.estudianteid = estudiante.id";
+$query = "SELECT reporte.id as id, descripcion, maestro.nombre AS maestro, estudiante.nombre AS estudiante FROM reporte JOIN maestro ON reporte.maestroid = maestro.id JOIN estudiante ON reporte.estudianteid = estudiante.id";
 $response = mysqli_query($con, $query);
 
 
@@ -15,7 +15,13 @@ echo "<tr>
 
 
 while($row = mysqli_fetch_array($response,MYSQLI_ASSOC)){
-echo "<tr><th>" . $row['descripcion'] . "</th><th>" . $row['maestro'] . "</th><th>" . $row['estudiante'] ."</th><th>" . "</th></tr>";
+$send = urlencode($row['id']);
+echo "<tr><td>" . $row['descripcion'] . "</td><td>" . 
+$row['maestro'] . "</td><td>" . 
+$row['estudiante'] ."</td><td>" . 
+"<a href='../Vistas/modificarReporte.php?id=$send'>Modificar</a>" ."</td><td>" . 
+"<a href='../dataAccess/borrarreporte.php?id=$send'>Borrar</a>" ."</td><td>" . 
+"</td></tr>";
 }
 echo "</table>";
 

@@ -27,10 +27,6 @@ if ($con->query($sql) === TRUE) {
 
 ?>
 
-
-
-
-
 <!DOCTYPE html">
 <html>
     <head>
