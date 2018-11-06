@@ -2,6 +2,10 @@
 $con=mysqli_connect("localhost","root","root","escuela");
 include_once 'dbConnect.php';
 session_start(); 
+if($_SESSION['usuarionombre']==''){
+    header("Location: loginMaestro.php");
+}
+
 $masid= $_SESSION['usuarioid'];
 $user = $_SESSION['usuario']; 
 $query = "SELECT * FROM clase WHERE maestroid= $masid";
@@ -46,7 +50,7 @@ echo "</table>";
 
 
 <a href="../Vistas/agregarclase.php">Agregar Clase</a><br>
-<a href="../Vistas/VistaPrincipalMaestro.html">Regresar</a>
+<a href="../Vistas/VistaPrincipalMaestro.php">Regresar</a>
 <h3>Bienvenido Professor <?php echo $user?> Id: <?php echo $masid ?></h3>
 
 </body>
