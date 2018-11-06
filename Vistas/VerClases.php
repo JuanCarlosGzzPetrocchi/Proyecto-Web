@@ -1,14 +1,11 @@
 <?php
 $con=mysqli_connect("localhost","root","root","escuela");
 include_once 'dbConnect.php';
-
-$query = "SELECT * FROM clase";
+session_start(); 
+$masid= $_SESSION['usuarioid'];
+$user = $_SESSION['usuario']; 
+$query = "SELECT * FROM clase WHERE maestroid= $masid";
 $response = mysqli_query($con, $query);
-
-// if(isset($_GET['modify'])) {
-//   $_GET['modify'];
-//   header("Location: modificarClase.php");
-// }
 
 echo "<table>";
 echo "<tr>
@@ -50,5 +47,6 @@ echo "</table>";
 
 <a href="../Vistas/agregarclase.php">Agregar Clase</a><br>
 <a href="../Vistas/VistaPrincipalMaestro.html">Regresar</a>
+<h3>Bienvenido Professor <?php echo $user?> Id: <?php echo $masid ?></h3>
 
 </body>

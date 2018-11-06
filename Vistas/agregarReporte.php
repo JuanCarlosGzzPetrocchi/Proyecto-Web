@@ -1,7 +1,9 @@
 <?php
 $con=mysqli_connect("localhost","root","root","escuela");
 include_once 'dbConnect.php';
-
+session_start(); 
+$masid= $_SESSION['usuarioid'];
+$user = $_SESSION['usuario']; 
 
 if(isset($_POST['RegistrarReporte'])) {
 $descripcion = $_POST['descripcion'];
@@ -9,8 +11,9 @@ $estudiante = $_POST['estudiante'];
 $salon = $_POST['salon'];
 
 
-if(mysqli_query($con,"INSERT INTO reporte(descripcion,maestroid,estudianteid) VALUES ('$descripcion','1','$estudiante')")){
+if(mysqli_query($con,"INSERT INTO reporte(descripcion,maestroid,estudianteid) VALUES ('$descripcion',$masid,'$estudiante')")){
 echo("Reporte registrado");
+header("Location: VerReportes.php");
 }
 else{
 echo("Mission failed we'll get'em next time");

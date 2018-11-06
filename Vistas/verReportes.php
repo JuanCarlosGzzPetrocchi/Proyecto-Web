@@ -1,8 +1,10 @@
 <?php
 $con=mysqli_connect("localhost","root","root","escuela");
 include_once 'dbConnect.php';
-
-$query = "SELECT reporte.id as id, descripcion, maestro.nombre AS maestro, estudiante.nombre AS estudiante FROM reporte JOIN maestro ON reporte.maestroid = maestro.id JOIN estudiante ON reporte.estudianteid = estudiante.id";
+session_start(); 
+$masid= $_SESSION['usuarioid'];
+$user = $_SESSION['usuario']; 
+$query = "SELECT reporte.id as id, descripcion, maestro.nombre AS maestro, estudiante.nombre AS estudiante FROM reporte JOIN maestro ON reporte.maestroid = maestro.id JOIN estudiante ON reporte.estudianteid = estudiante.id where maestro.id=$masid";
 $response = mysqli_query($con, $query);
 
 

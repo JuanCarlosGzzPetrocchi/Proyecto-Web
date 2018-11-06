@@ -11,11 +11,12 @@ $query = "SELECT * FROM maestro WHERE nombre='$nombre'";
 
 $response = mysqli_query($con, $query);
 $row = mysqli_fetch_array($response,MYSQLI_ASSOC);
-
+session_start();
 if($row["clave"] == $clave)
 {
-//$_SESSION['user'] = $row['nombre'];
-header("Location: VistaPrincipalMaestro.html");
+$_SESSION['usuarionombre'] = $row['nombre'];
+$_SESSION['usuarioid'] = $row['id'];
+header("Location: VistaPrincipalMaestro.php");
 }
 else{
 echo("Wrong Credentials");

@@ -2,18 +2,19 @@
 $con=mysqli_connect("localhost","root","root","escuela");
 include_once 'dbConnect.php';
 
-
+session_start(); 
 if(isset($_POST['RegistrarClase'])) {
 $nombre = $_POST['nombre'];
 $horario = $_POST['horario'];
 $salon = $_POST['salon'];
+$masid = $_SESSION['usuarioid'];
 
-
-if(mysqli_query($con,"INSERT INTO clase(nombre,horario,salon,maestroid) VALUES ('$nombre','$horario','$salon','1')")){
+if(mysqli_query($con,"INSERT INTO clase(nombre,horario,salon,maestroid) VALUES ('$nombre','$horario','$salon',$masid)")){
 echo("clase registrado");
 header("Location: VerClases.php");
 }
 else{
+echo $masid;
 echo("Mission failed we'll get'em next time");
 }
 
