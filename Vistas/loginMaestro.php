@@ -30,7 +30,7 @@ echo("Wrong Credentials");
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Registration</title>
+        <title>Login Maestro</title>
         <link rel="stylesheet" href="styles/styles.css" type="text/css"/>
     </head>
     <body>

@@ -29,6 +29,7 @@ echo "<tr>
  "</td><td name='horario'>" . $row['horario'] . 
  "</td><td ='salon'>" . $row['salon'] .
  "</td><td>" . $row['maestroid'] . 
+  "</td><td>" . "<a href='../Vistas/verEstudiantes.php?id=$send'>Ver Estudiantes</a>".
  "</td><td>" . "<a href='../Vistas/modificarClase.php?id=$send'>Modificar</a>".
  "</td><td>" . "<a href='../dataAccess/borrarclase.php?id=$send'>Borrar</a>".
 "</td></tr>";

@@ -5,8 +5,6 @@ if(isset($_POST['logout'])) {
 session_destroy();
 header("Location: loginMaestro.php");
 }
-
-
 ?>
 <!DOCTYPE html">
 <html>

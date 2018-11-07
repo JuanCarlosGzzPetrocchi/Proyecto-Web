@@ -38,5 +38,6 @@ echo("Mission failed we'll get'em next time");
             </form>
         </div>
     </center>
+    <a href="../Vistas/loginMaestro.php">Regresar</a>
 </body>
 </html>
