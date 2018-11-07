@@ -3,10 +3,10 @@ $con=mysqli_connect("localhost","root","root","escuela");
 include_once 'dbConnect.php';
 
 $id = $_GET['id'];
-$query = "SELECT unionClaseEstudiante.calificacion as calificacion, estudiante.nombre as nombre  FROM unionClaseEstudiante JOIN estudiante ON unionClaseEstudiante.estudianteid = estudiante.id WHERE unionClaseEstudiante.id = $id LIMIT 1";
+$query = "SELECT unionClaseEstudiante.calificacion as calificacion, unionClaseEstudiante.claseid as claseid, estudiante.nombre as nombre  FROM unionClaseEstudiante JOIN estudiante ON unionClaseEstudiante.estudianteid = estudiante.id WHERE unionClaseEstudiante.id = $id LIMIT 1";
 $response = mysqli_query($con, $query);
 $cambio = mysqli_fetch_assoc($response);
-
+$claseid = $cambio['claseid'];
 if(isset($_POST['CambiarCalificacion'])) {
 $calificacion = $_POST['calificacion'];
 
@@ -19,7 +19,7 @@ if ($con->query($sql) === TRUE) {
 }
 }
 
-echo "<a href='../Vistas/VerEstudiantes.php?id=$id'>Regresar</a>";
+echo "<a href='../Vistas/VerEstudiantes.php?id=$claseid'>Regresar</a>";
 
 ?>
 

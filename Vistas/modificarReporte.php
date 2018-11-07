@@ -12,15 +12,12 @@ $descripcion = $_POST['descripcion'];
 $estudiante = $_POST['estudiante'];
 
 
-$sql = "UPDATE reporte SET descripcion = '$descripcion', estudiante = '$estudiante' WHERE id ='$id'";
+$sql = "UPDATE reporte SET descripcion = '$descripcion' WHERE id ='$id'";
 if ($con->query($sql) === TRUE) {
     echo "Record updated successfully";
 } else {
     echo "Error updating record: " . $con->error;
 }
-
-
-
 }
 
 ?>
@@ -38,11 +35,11 @@ if ($con->query($sql) === TRUE) {
             <form method="post">
                 <label>Descripcion de incidente</label>
                 <input type="text" name="descripcion" placeholder="Descripcion del reporte" value="<?php echo $reporte['descripcion'];?>" required /><br>
-                 <label>Alumno Responsable</label>
-                 <select id="estudiante" name="estudiante">
+<!--                  <label>Alumno Responsable</label> -->
+                 <!-- <select id="estudiante" name="estudiante">
                     <option value="1">Pepe</option>
                     <option value="2">Maria</option>
-                    <option value="3">Juan</option>
+                    <option value="3">Juan</option> -->
                  <input type="submit" class="button"  name="ModificarReporte" value="Modificar"/>
             </form>
             <a href="../Vistas/VerReportes.php">Regresar</a>
