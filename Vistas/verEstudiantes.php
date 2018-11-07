@@ -20,7 +20,7 @@ echo "
 <tr><td>" . $row['estudiante'] . 
  "</td><td>" . $row['calificacion'] . 
  "</td><td>" . "<a href='../Vistas/cambiarCalificacion.php?id=$send'>Cambiar calificacion</a>".
- "</td><td>" . "<a href='../dataAccess/borrarclase.php?id=$send'>Eliminar estudiante</a>".
+ "</td><td>" . "<a href='../dataAccess/quitarEstudiante.php?id=$send'>Eliminar estudiante</a>".
 "</td></tr>";
 }
 
