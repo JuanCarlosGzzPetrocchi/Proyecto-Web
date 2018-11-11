@@ -46,6 +46,7 @@ echo "<a href='../Vistas/VerEstudiantes.php?id=$id'>Regresar</a>";
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Agregar estudiante</title>
+        <link rel="stylesheet" type="text/css" href="../css/css.css">
     </head>
     <body>
     <center>

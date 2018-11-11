@@ -28,6 +28,7 @@ echo "<a href='../Vistas/VerEstudiantes.php?id=$claseid'>Regresar</a>";
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>ModificarClase</title>
+        <link rel="stylesheet" type="text/css" href="../css/css.css">
     </head>
     <body>
     <center>

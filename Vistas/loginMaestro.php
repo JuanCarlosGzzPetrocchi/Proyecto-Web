@@ -34,7 +34,7 @@ echo("Wrong Credentials");
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Login Maestro</title>
-        <link rel="stylesheet" href="styles/styles.css" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="../css/css.css">
     </head>
     <body>
     <center>

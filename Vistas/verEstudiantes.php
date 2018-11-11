@@ -19,15 +19,15 @@ $send = urlencode($row['id']);
 echo "
 <tr><td>" . $row['estudiante'] . 
  "</td><td>" . $row['calificacion'] . 
- "</td><td>" . "<a href='../Vistas/cambiarCalificacion.php?id=$send'>Cambiar calificacion</a>".
- "</td><td>" . "<a href='../dataAccess/quitarEstudiante.php?id=$send'>Eliminar estudiante</a>".
+ "</td><td>" . "<a href='../Vistas/cambiarCalificacion.php?id=$send' class='button'>Cambiar calificacion</a>".
+ "</td><td>" . "<a href='../dataAccess/quitarEstudiante.php?id=$send'class='button'>Eliminar estudiante</a>".
 "</td></tr>";
 }
 
 echo "</table>";
 
-echo "<a href='../Vistas/agregarEstudianteaClase.php?id=$id2'>Agregar estudiante a esta clase</a>";
-echo "<a href='../Vistas/VerClases.php?id=$id'>Regresar</a>";
+echo "<a href='../Vistas/agregarEstudianteaClase.php?id=$id2' class='agregar' >Agregar estudiante a esta clase</a>";
+echo "<a href='../Vistas/VerClases.php?id=$id' class='back'>Regresar</a>";
 ?>
 
 <!DOCTYPE html">
@@ -35,12 +35,14 @@ echo "<a href='../Vistas/VerClases.php?id=$id'>Regresar</a>";
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Login Maestro</title>
-        <link rel="stylesheet" href="styles/styles.css" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="../css/css.css">
     </head>
     <body>
+
     <center>
         <div id="signup">       
             <h3>Estudiantes en clase de: <?php echo $clasenombre;?></h3>
+            
             
         </div>
     </center>
