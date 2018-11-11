@@ -16,7 +16,7 @@ header("Location: loginMaestro.php");
     <body>
     <center>
         <div id="signup">       
-            <h3>Bienvenido Professor <?php echo $user?></h3>
+            <h3>Bienvenido Professor <?php echo $_COOKIE["user"]?></h3>
             <a href="../Vistas/VerClases.php">Ver Clases</a><br>
             <a href="../Vistas/VerReportes.php">Ver Reportes</a>
             <form method="post">

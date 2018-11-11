@@ -14,7 +14,6 @@ $response = mysqli_query($con, $query);
 echo "<table>";
 echo "<tr>
     <th>Descripcion</th>
-    <th>Maestro</th>
     <th>Estudiante</th> 
   </tr>";
 
@@ -22,7 +21,6 @@ echo "<tr>
 while($row = mysqli_fetch_array($response,MYSQLI_ASSOC)){
 $send = urlencode($row['id']);
 echo "<tr><td>" . $row['descripcion'] . "</td><td>" . 
-$row['maestro'] . "</td><td>" . 
 $row['estudiante'] ."</td><td>" . 
 "<a href='../Vistas/modificarReporte.php?id=$send'>Modificar</a>" ."</td><td>" . 
 "<a href='../dataAccess/borrarreporte.php?id=$send'>Borrar</a>" ."</td><td>" . 
