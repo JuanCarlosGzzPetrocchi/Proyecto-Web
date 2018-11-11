@@ -16,6 +16,9 @@ if($row["clave"] == $clave)
 {
 $_SESSION['usuarionombre'] = $row['nombre'];
 $_SESSION['usuarioid'] = $row['id'];
+$cookie_name = "user";
+$cookie_value = $row['nombre'];
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
 header("Location: VistaPrincipalMaestro.php");
 }
 else{
