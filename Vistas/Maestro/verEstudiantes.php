@@ -8,7 +8,7 @@ $query = "SELECT unionClaseEstudiante.id as id,clase.nombre AS clase, estudiante
 
 $response = mysqli_query($con, $query);
 
-echo "<table>";
+echo "<table class='table'>";
 echo "<tr>
     <th>Estudiante</th> 
     <th>Promedio</th> 
@@ -19,15 +19,15 @@ $send = urlencode($row['id']);
 echo "
 <tr><td>" . $row['estudiante'] . 
  "</td><td>" . $row['calificacion'] . 
- "</td><td>" . "<a href='../Vistas/cambiarCalificacion.php?id=$send' class='button'>Cambiar calificacion</a>".
- "</td><td>" . "<a href='../dataAccess/quitarEstudiante.php?id=$send'class='button'>Eliminar estudiante</a>".
+ "</td><td>" . "<a href='../Maestro/cambiarCalificacion.php?id=$send' type='button' class='btn btn-primary'>Cambiar calificacion</a>".
+ "</td><td>" . "<a href='../../dataAccess/quitarEstudiante.php?id=$send' type='button' class='btn btn-danger'>Eliminar estudiante</a>".
 "</td></tr>";
 }
 
 echo "</table>";
 
-echo "<a href='../Vistas/agregarEstudianteaClase.php?id=$id2' class='agregar' >Agregar estudiante a esta clase</a>";
-echo "<a href='../Vistas/VerClases.php?id=$id' class='back'>Regresar</a>";
+echo "<a href='../Maestro/agregarEstudianteaClase.php?id=$id2' type='button' class='btn btn-success' >Agregar estudiante a esta clase</a> <br>";
+echo "<a href='../Maestro/VerClases.php?id=$id' type='button' class='btn btn-info'>Regresar</a>";
 ?>
 
 <!DOCTYPE html">
@@ -35,7 +35,10 @@ echo "<a href='../Vistas/VerClases.php?id=$id' class='back'>Regresar</a>";
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Login Maestro</title>
-        <link rel="stylesheet" type="text/css" href="../css/css.css">
+        <link rel="stylesheet" type="text/css" href="../../css/css.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
 

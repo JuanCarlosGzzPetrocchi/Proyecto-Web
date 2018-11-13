@@ -15,7 +15,7 @@ $query = "DELETE FROM unionClaseEstudiante WHERE id = $id";
 
 if(mysqli_query($con,$query)){
 echo("Estudiante borrado");
-header("Location: ../Vistas/VerEstudiantes.php?id=$claseid");
+header("Location: ../Vistas/Maestro/VerEstudiantes.php?id=$claseid");
 
 }
 else{
