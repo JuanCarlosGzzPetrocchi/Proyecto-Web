@@ -14,7 +14,9 @@
   </head>
   <body>
 
-    <table class='table'>
+    <center>
+      <h1>Reportes</h1>
+      <table class="table">
       <tr>
         <th>Descripcion</th>
         <th>Estudiante</th> 
@@ -27,6 +29,10 @@
           ?>
       </tr>
     </table>
+
+    </center>
+
+    
 
     <a href="../Maestro/agregarReporte.php" type="button" class="btn btn-success">Agregar Reporte</a><br>
     <a href="../Maestro/VistaPrincipalMaestro.php" type="button" class="btn btn-info">Regresar</a>

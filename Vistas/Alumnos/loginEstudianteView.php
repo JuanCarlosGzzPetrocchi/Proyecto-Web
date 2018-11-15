@@ -24,9 +24,9 @@
 			<div id="signup">
 			<form method="post">
 				<label>Nombre</label>
-				<input type="text" name="nombre" placeholder="Nombre Alumno" required/><br>
+				<input type="text" name="nombre" placeholder="Nombre Alumno" required/>
 				<label>Contrasena</label>
-				<input type="password" name="clave" placeholder="Contraseña" required/><br>
+				<input type="password" name="clave" placeholder="Contraseña" required/>
 				<input type="submit" type="button" class="btn btn-primary"  name="loginAlumno" value="Entrar">
 			</form>
 		</div>

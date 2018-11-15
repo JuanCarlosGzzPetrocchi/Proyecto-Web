@@ -22,9 +22,9 @@
                 "<td name='horario'>" . $row['horario'] . "</td>" . 
                 "<td ='salon'>" . $row['salon'] ."</td>" . 
                 "<td>" . $row['maestroid'] . "</td>" . 
-                "<td> <a href='../Maestro/verEstudiantes.php?id=$send'> Ver Estudiantes </a> </td>" . 
-                "<td> <a href='../Maestro/modificarClase.php?id=$send'> Modificar </a> </td>" . 
-                "<td> <a href='../dataAccess/borrarclase.php?id=$send'> Borrar </a> </td>" . 
+                "<td> <a href='../Maestro/verEstudiantes.php?id=$send' type='button' class='btn btn-info'> Ver Estudiantes </a> </td>" . 
+                "<td> <a href='../Maestro/modificarClase.php?id=$send' type='button' class='btn btn-warning'> Modificar </a> </td>" . 
+                "<td> <a href='../dataAccess/borrarclase.php?id=$send' type='button' class='btn btn-danger'> Borrar </a> </td>" . 
             "</tr>";
 
         $i = $i + 1;
