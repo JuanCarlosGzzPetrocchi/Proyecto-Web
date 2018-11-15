@@ -17,7 +17,7 @@
                 <th>Clase</th>
                 <th>Horario</th> 
                 <th>Salon</th> 
-                <th>Maestro</th>
+                <th>Numero de alumnos</th>
             </tr>
             <?php 
                 foreach($resultado as $valor){
