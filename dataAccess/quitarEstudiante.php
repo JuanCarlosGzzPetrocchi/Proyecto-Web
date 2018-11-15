@@ -17,6 +17,7 @@ if(mysqli_query($con,$query)){
 echo("Estudiante borrado");
 header("Location: ../Vistas/Maestro/VerEstudiantes.php?id=$claseid");
 
+
 }
 else{
 echo("Mission failed we'll get'em next time");

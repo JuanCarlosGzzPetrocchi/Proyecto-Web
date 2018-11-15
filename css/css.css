@@ -24,12 +24,7 @@
 }
 
 body{
-	background-color: #F9FFF4 !important;
-}
-
-#desc{
-	height: 100px !important;
-width: 400px;
+	background-color: green;
 }
 
 .agregar {
