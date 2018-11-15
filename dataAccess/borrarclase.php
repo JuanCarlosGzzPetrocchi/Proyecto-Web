@@ -12,6 +12,6 @@ header("Location: ../Vistas/Maestro/VerClases.php");
 
 }
 else{
-echo("Mission failed we'll get'em next time");
+echo("¡No puedes borrar una clase si tienes estudiantes!");
 }
 ?>
