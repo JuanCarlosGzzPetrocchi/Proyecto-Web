@@ -8,7 +8,7 @@ $query = "DELETE FROM clase WHERE id = $id";
 
 if(mysqli_query($con,$query)){
 echo("clase borrado");
-header("Location: ../Vistas/VerClases.php");
+header("Location: ../Vistas/Maestro/VerClases.php");
 
 }
 else{

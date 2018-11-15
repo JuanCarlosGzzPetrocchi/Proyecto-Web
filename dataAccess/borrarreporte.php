@@ -8,7 +8,7 @@ $query = "DELETE FROM reporte WHERE id = $id";
 
 if(mysqli_query($con,$query)){
 echo("clase borrado");
-header("Location: ../Vistas/VerReportes.php");
+header("Location: ../Vistas/Maestro/VerReportes.php");
 
 }
 else{

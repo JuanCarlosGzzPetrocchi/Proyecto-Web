@@ -32,6 +32,10 @@ if ($con->query($sql) === TRUE) {
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>ModificarClase</title>
+        <link rel="stylesheet" type="text/css" href="../../css/css.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
     <center>
@@ -47,9 +51,9 @@ if ($con->query($sql) === TRUE) {
                  <input type="submit" class="button"  name="ModificarClase" value="Modificar"/>
             </form>
 
-            <a href="../Vistas/modificarCalificaciones.php">Modificar Calificaciones/Eliminar Estudiante</a><br>
-            <a href="../Vistas/agregarEstudiante.php">Agregar Estudiante</a><br>
-            <a href="../Vistas/VerClases.php">Regresar</a>
+            <a href="../Maestro/modificarCalificaciones.php">Modificar Calificaciones/Eliminar Estudiante</a><br>
+            <a href="../Maestro/agregarEstudiante.php">Agregar Estudiante</a><br>
+            <a href="../Maestro/VerClases.php">Regresar</a>
         </div>
     </center>
 </body>

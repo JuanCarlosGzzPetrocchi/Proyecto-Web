@@ -27,6 +27,10 @@ if ($con->query($sql) === TRUE) {
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Modificar Reporte</title>
+        <link rel="stylesheet" type="text/css" href="../../css/css.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
     <center>
@@ -35,14 +39,10 @@ if ($con->query($sql) === TRUE) {
             <form method="post">
                 <label>Descripcion de incidente</label>
                 <input type="text" name="descripcion" placeholder="Descripcion del reporte" value="<?php echo $reporte['descripcion'];?>" required /><br>
-<!--                  <label>Alumno Responsable</label> -->
-                 <!-- <select id="estudiante" name="estudiante">
-                    <option value="1">Pepe</option>
-                    <option value="2">Maria</option>
-                    <option value="3">Juan</option> -->
-                 <input type="submit" class="button"  name="ModificarReporte" value="Modificar"/>
+             
+                 <input type="submit" type="button" class="btn btn-success"  name="ModificarReporte" value="Modificar"/>
             </form>
-            <a href="../Vistas/VerReportes.php">Regresar</a>
+            <a href="../Maestro/VerReportes.php" type="button" class="btn btn-info">Regresar</a>
         </div>
     </center>
 </body>
