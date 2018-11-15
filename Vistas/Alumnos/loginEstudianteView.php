@@ -32,6 +32,6 @@
 		</div>
 
 		</center>
-		
+		<a href="../../Vistas/Index.html" type="button" class="btn btn-info">Regresar</a>
 	</body>
 </html>

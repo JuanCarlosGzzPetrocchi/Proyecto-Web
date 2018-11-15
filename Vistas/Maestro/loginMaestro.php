@@ -24,5 +24,6 @@
         </div>
     </center>
     <a href="../Maestro/registromaestro.php" type="button" class="btn btn-warning">Registrar nuevo maestro</a>
+    <a href="../../Vistas/Index.html" type="button" class="btn btn-info">Regresar</a>
 </body>
 </html>
