@@ -3,6 +3,6 @@
  	$user = $_SESSION['usuarionombre']; 
 	if(isset($_POST['logout'])) {
 		session_destroy();
-		header("Location: loginEstudianteLogic.php");
+		header("Location: loginEstudianteView.php");
 	}
 ?>

@@ -7,22 +7,28 @@
 		<title>
 			ALUMNOS
 		</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<header>
-			<h1>
-			LogIn Alumnos:
-			</h1>
+		<link rel="stylesheet" type="text/css" href="../../css/css.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<head>
+			
 		</header>
 	</head>
 	<body>
-		<div id="signup">
+		<center>
+			<h1>Login Alumnos: </h1>
+			<div id="signup">
 			<form method="post">
 				<label>Nombre</label>
 				<input type="text" name="nombre" placeholder="Nombre Alumno" required/><br>
 				<label>Contrasena</label>
 				<input type="password" name="clave" placeholder="Contraseña" required/><br>
-				<input type="submit" class="button" name="loginAlumno" value="Entrar">
+				<input type="submit" type="button" class="btn btn-primary"  name="loginAlumno" value="Entrar">
 			</form>
 		</div>
+
+		</center>
+		
 	</body>
 </html>
