@@ -14,13 +14,24 @@
     <center>
         <div id="signup">       
             <h3>Login de Maestro</h3>
-            <form method="post">
+             <!--  <form method="post">
                 <label>Nombre</label>
                 <input type="text" name="nombre" placeholder="Tu Nombre" required />
                  <label>Contraseña</label>
                  <input type="password" name="clave" placeholder="Tu Contraseña" required />
                  <input type="submit"  type="button" class="btn btn-primary"  name="loginMaestro" value="Entrar"/>
-            </form>
+            </form>  -->
+
+
+            <div class="login-page">
+  <div class="form">
+    <form class="login-form" method="post">
+      <input type="text" name="nombre" placeholder="username"/>
+      <input type="password" name ="clave" placeholder="password"/>
+      <input type="submit"  type="button"  name="loginMaestro" value="Entrar"/>
+    </form>
+  </div>
+</div>
         </div>
     </center>
     <a href="../Maestro/registromaestro.php" type="button" class="btn btn-warning">Registrar nuevo maestro</a>

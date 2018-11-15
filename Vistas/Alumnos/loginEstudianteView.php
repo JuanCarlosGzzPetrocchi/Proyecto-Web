@@ -19,15 +19,17 @@
 	</head>
 	<body>
 		<center>
-			<h1>Login Alumnos: </h1>
+			<h1>Login Alumnos </h1>
 			<div id="signup">
-			<form method="post">
-				<label>Nombre</label>
-				<input type="text" name="nombre" placeholder="Nombre Alumno" required/>
-				<label>Contrasena</label>
-				<input type="password" name="clave" placeholder="Contraseña" required/>
-				<input type="submit" type="button" class="btn btn-primary"  name="loginAlumno" value="Entrar">
-			</form>
+			<div class="login-page">
+  <div class="form">
+    <form class="login-form" method="post">
+      <input type="text" name="nombre" placeholder="username"/>
+      <input type="password" name ="clave" placeholder="password"/>
+      <input type="submit"  type="button"  name="loginMaestro" value="Entrar"/>
+    </form>
+  </div>
+</div>
 		</div>
 
 		</center>
