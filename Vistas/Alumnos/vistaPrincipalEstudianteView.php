@@ -1,4 +1,7 @@
-<?php include('vistaPrincipalEstudianteLogic.php');?>
+<?php 
+	//include('../Controller/Alumno/vistaPrincipalEstudianteLogic.php');
+	include('vistaPrincipalEstudianteLogic.php');
+?>
 
 <!DOCTYPE html>
 <html>

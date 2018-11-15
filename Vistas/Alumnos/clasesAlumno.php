@@ -1,5 +1,4 @@
-
-
+<?php include('claseAlumnoLogic.php');?>
 
 <!DOCTYPE html">
 <html>
@@ -13,12 +12,25 @@
         
     </head>
     <body>
-    	<center><h1>Clases que estas cursando</h1>
-<?php include('claseAlumnoLogic.php');?>
+    	<center>
+            <h1>Clases que estas cursando</h1>
 
+            <table class='table'>
+                <tr>
+                    <th>Clase</th>
+                    <th>Horario</th> 
+                    <th>Salon</th> 
+                    <th>Maestro</th>
+                    <th>Calificacion</th>
+                </tr>
+                <?php
+                    foreach($resultado as $valor){
+                        echo $valor;
+                    }
+                ?>
+            </table>
     	</center>
+        <a href="../Alumnos/VistaPrincipalEstudianteView.php" type="button" class="btn btn-info">Regresar</a>
 
-<a href="../Alumnos/VistaPrincipalEstudianteView.php" type="button" class="btn btn-info">Regresar</a>
-</h3>
-
-</body>
+    </body>
+</html>

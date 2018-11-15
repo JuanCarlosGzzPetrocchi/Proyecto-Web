@@ -1,10 +1,13 @@
 <?php
+
     $con=mysqli_connect("localhost","root","root","escuela");
     include_once 'dbConnect.php';
+
     session_start(); 
     if($_SESSION['usuarionombre']==''){
-        header("Location: loginMaestro.php");
+        header("Location: ../Maestro/loginMaestro.php");
     }
+    
     $masid= $_SESSION['usuarioid'];
     $query = "SELECT nombre,id FROM estudiante";
     $response = mysqli_query($con, $query);

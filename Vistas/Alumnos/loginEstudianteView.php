@@ -1,4 +1,7 @@
-<?php include('loginEstudianteLogic.php');?>
+<?php 
+	//include('Proyecto-Web/Controller/Alumno/loginEstudianteLogic.php');
+	include('../Alumnos/loginEstudianteLogic.php');
+?>
 
 <!DOCTYPE html>
 <html>

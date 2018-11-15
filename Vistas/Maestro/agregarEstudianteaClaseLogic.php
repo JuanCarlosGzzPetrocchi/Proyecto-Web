@@ -1,7 +1,15 @@
 <?php
+
 	$con=mysqli_connect("localhost","root","root","escuela");
 	include_once 'dbConnect.php';
-	session_start(); 
+	
+	session_start();
+	$user = $_SESSION['usuarionombre'];
+
+  	if($_SESSION['usuarionombre']==''){
+	    header("Location: ../Maestro/loginMaestro.php");
+	} 
+	
 	$id = $_GET['id'];
 
 	$query = "SELECT nombre,id FROM estudiante WHERE estudiante.id NOT IN (SELECT estudianteid FROM unionClaseEstudiante WHERE unionClaseEstudiante.claseid=$id)";

@@ -1,8 +1,5 @@
 <?php include('verReportesLogic.php');?>
 
-
-
-
 <!DOCTYPE html">
 <html>
   <head>

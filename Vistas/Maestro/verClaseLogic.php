@@ -3,7 +3,7 @@
     include_once 'dbConnect.php';
     session_start(); 
     if($_SESSION['usuarionombre']==''){
-        header("Location: loginMaestro.php");
+        header("Location: ../Maestro/loginMaestro.php");
     }
 
     $masid= $_SESSION['usuarioid'];

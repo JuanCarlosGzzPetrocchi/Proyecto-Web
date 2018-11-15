@@ -1,4 +1,11 @@
 <?php
+	
+	session_start(); 
+  	$user = $_SESSION['usuarionombre'];
+
+  	if($_SESSION['usuarionombre']==''){
+	    header("Location: ../Maestro/loginMaestro.php");
+	} 
 
 	$con=mysqli_connect("localhost","root","root","escuela");
 	include_once 'dbConnect.php';
