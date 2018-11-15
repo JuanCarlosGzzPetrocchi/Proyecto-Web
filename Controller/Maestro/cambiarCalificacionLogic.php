@@ -15,6 +15,7 @@
 	$response = mysqli_query($con, $query);
 	$cambio = mysqli_fetch_assoc($response);
 	$claseid = $cambio['claseid'];
+
 	if(isset($_POST['CambiarCalificacion'])) {
 		$calificacion = $_POST['calificacion'];
 
@@ -26,6 +27,6 @@
 		}
 	}
 
-	echo "<a href='../Maestro/VerEstudiantes.php?id=$claseid' type='button' class='btn btn-info'>Regresar</a>";
+	$button = "<a href='../Maestro/VerEstudiantes.php?id=$claseid' type='button' class='btn btn-info'>Regresar</a>";
 
 ?>
