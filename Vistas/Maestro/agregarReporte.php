@@ -49,6 +49,6 @@ echo("Mission failed we'll get'em next time");
             <h3>Registro de Reporte</h3>
         </div>
     </center>
-    <a href="../Vistas/VerReportes.php">Regresar</a>
+    <a href="../Maestro/VerReportes.php">Regresar</a>
 </body>
 </html>

@@ -1,11 +1,5 @@
-<?php
-  session_start(); 
-  $user = $_SESSION['usuarionombre']; 
-if(isset($_POST['logout'])) {
-session_destroy();
-header("Location: loginMaestro.php");
-}
-?>
+<?php include('vistaPrincipalMaestroLogic.php');?>
+
 <!DOCTYPE html">
 <html>
     <head>
@@ -17,8 +11,8 @@ header("Location: loginMaestro.php");
     <center>
         <div id="signup">       
             <h3>Bienvenido Professor <?php echo $user?></h3>
-            <a href="../Vistas/VerClases.php">Ver Clases</a><br>
-            <a href="../Vistas/VerReportes.php">Ver Reportes</a>
+            <a href="../Maestro/VerClases.php">Ver Clases</a><br>
+            <a href="../Maestro/VerReportes.php">Ver Reportes</a>
             <form method="post">
                 <input type="submit" class="button"  name="logout" value="Logout"/>
             </form>

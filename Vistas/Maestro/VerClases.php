@@ -50,8 +50,8 @@ echo "</table>";
 
 
 
-<a href="../Vistas/agregarclase.php">Agregar Clase</a><br>
-<a href="../Vistas/VistaPrincipalMaestro.php">Regresar</a>
+<a href="../Maestro/agregarclase.php">Agregar Clase</a><br>
+<a href="../Maestro/VistaPrincipalMaestro.php">Regresar</a>
 <h3>Bienvenido Professor <?php echo $user?> Id: <?php echo $masid ?></h3>
 
 </body>
