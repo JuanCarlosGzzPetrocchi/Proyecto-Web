@@ -37,7 +37,7 @@
 		$query2 = "INSERT INTO unionClaseEstudiante(claseid,estudianteid,calificacion) VALUES ($id, $estudiante, $calificacion)";
 
 		if(mysqli_query($con,$query2)){
-			echo("Estudiante registrado");
+			header("Location: ../../Vistas/Maestro/VerEstudiantes.php?id=$id");	
 		}
 		else{
 			echo("Mission failed we'll get'em next time");
