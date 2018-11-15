@@ -22,7 +22,7 @@
 
 		$sql = "UPDATE reporte SET descripcion = '$descripcion' WHERE id ='$id'";
 		if ($con->query($sql) === TRUE) {
-    		echo "Record updated successfully";
+    		header("Location: ../../Vistas/Maestro/VerReportes.php");
 		} else {
     		echo "Error updating record: " . $con->error;
 		}

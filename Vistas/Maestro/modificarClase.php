@@ -21,10 +21,10 @@
                  <input type="text" name="horario" placeholder="Horario de clase" value="<?php echo $clase['horario'];?>" required /><br>
                  <label>Salon</label>
                  <input type="text" name="salon" placeholder="Salon de clase" value="<?php echo $clase['salon'];?>" required /><br>
-                 <input type="submit" class="button"  name="ModificarClase" value="Modificar"/>
+                 <input type="submit" type="button" class="btn btn-warning" name="ModificarClase" value="Modificar"/>
             </form>
             
-            <a href="../Maestro/VerClases.php">Regresar</a>
+            <a href="../Maestro/VerClases.php" type="button" class="btn btn-info">Regresar</a>
         </div>
     </center>
 </body>

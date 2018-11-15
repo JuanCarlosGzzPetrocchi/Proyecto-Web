@@ -21,8 +21,7 @@
 
 		$sql = "UPDATE unionClaseEstudiante SET calificacion = '$calificacion' WHERE id ='$id'";
 		if ($con->query($sql) === TRUE) {
-		    echo "Record updated successfully";
-		} else {
+		   header("Location: ../../Vistas/Maestro/VerEstudiantes.php?id=$claseid");		} else {
     		echo "Error updating record: " . $con->error;
 		}
 	}

@@ -22,7 +22,7 @@
 
 		$sql = "UPDATE clase SET nombre = '$nombre', horario = '$horario', salon = '$salon' WHERE id ='$id'";
 		if ($con->query($sql) === TRUE) {
-    		echo "Record updated successfully";
+    		header("Location: ../../Vistas/Maestro/VerClases.php");
 		} else {
     		echo "Error updating record: " . $con->error;
 		}
