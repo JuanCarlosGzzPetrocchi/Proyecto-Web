@@ -32,6 +32,6 @@
         $i = $i + 1;
     }
 
-    $buttons = "<a href='../Maestro/agregarEstudianteaClase.php?id=$id2' type='button' class='btn btn-success' >Agregar estudiante a esta clase</a> <br>
+    $buttons = "<a href='../Maestro/agregarEstudianteaClase.php?id=$id2' type='button' class='btn btn-success' >Agregar estudiante a esta clase</a>
                 <a href='../Maestro/VerClases.php?id=$id' type='button' class='btn btn-info'>Regresar</a>";
 ?>

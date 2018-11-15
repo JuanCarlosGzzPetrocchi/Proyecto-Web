@@ -34,7 +34,7 @@
 
     
 
-    <a href="../Maestro/agregarReporte.php" type="button" class="btn btn-success">Agregar Reporte</a><br>
+    <a href="../Maestro/agregarReporte.php" type="button" class="btn btn-success">Agregar Reporte</a>
     <a href="../Maestro/VistaPrincipalMaestro.php" type="button" class="btn btn-info">Regresar</a>
 
   </body>

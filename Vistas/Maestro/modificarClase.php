@@ -22,9 +22,8 @@
                  <label>Salon</label>
                  <input type="text" name="salon" placeholder="Salon de clase" value="<?php echo $clase['salon'];?>" required /><br>
                  <input type="submit" type="button" class="btn btn-warning" name="ModificarClase" value="Modificar"/>
+                 <a href="../Maestro/VerClases.php" type="button" class="btn btn-info">Regresar</a>
             </form>
-            
-            <a href="../Maestro/VerClases.php" type="button" class="btn btn-info">Regresar</a>
         </div>
     </center>
 </body>

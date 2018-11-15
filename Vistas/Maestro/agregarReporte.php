@@ -27,9 +27,9 @@
             <label>Descripcion del incidente: </label><br>
             <textarea id='desc' name='Descripcion' placeholder='Descripcion del reporte' required/> </textarea><br>
             <input type='submit' type='button' class='btn btn-success'  name='RegistrarReporte' value='Agregar'/>
+            <a href="../Maestro/VerReportes.php" type="button" class="btn btn-info">Regresar</a>
             </form>   
         </div>
     </center>
-      <a href="../Maestro/VerReportes.php" type="button" class="btn btn-info">Regresar</a>
 </body>
 </html>

@@ -25,13 +25,13 @@
                 ?>
                 </select> <br>
                 <label>Calificacion:</label> <br>
-                <input type='text' name='calificacion' placeholder='Calificacion' required /> <br>
-                <input type='submit' type='button' class='btn btn-success' name='AgregarEstudiante' value='Agregar'/> <br>
+                <input type='text' name='calificacion' placeholder='Calificacion' required /> </br>
+                <input type='submit' type='button' class='btn btn-success' name='AgregarEstudiante' value='Agregar'/>
+                <?php
+                    echo $button;
+                ?>
             </form>
         </div>
-        <?php
-            echo $button;
-        ?>
     </center>
 </body>
 </html>

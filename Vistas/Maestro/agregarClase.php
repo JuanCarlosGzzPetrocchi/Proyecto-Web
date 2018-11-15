@@ -22,9 +22,9 @@
                  <label>Salon</label>
                  <input type="text" name="salon" placeholder="Salon de clase" required /><br>
                  <input type="submit" type='button' class='btn btn-success'  name="RegistrarClase" value="Registrar"/>
+                    <a href='../Maestro/VerClases.php' type='button' class='btn btn-info'>Regresar</a>
             </form>
         </div>
-        <a href='../Maestro/VerClases.php' type='button' class='btn btn-info'>Regresar</a>
     </center>
 
 </body>

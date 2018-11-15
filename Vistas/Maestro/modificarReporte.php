@@ -19,8 +19,8 @@
                 <input type="text" name="descripcion" placeholder="Descripcion del reporte" value="<?php echo $reporte['descripcion'];?>" required /><br>
              
                  <input type="submit" type="button" class="btn btn-success"  name="ModificarReporte" value="Modificar"/>
+                 <a href="../Maestro/VerReportes.php" type="button" class="btn btn-info">Regresar</a>
             </form>
-            <a href="../Maestro/VerReportes.php" type="button" class="btn btn-info">Regresar</a>
         </div>
     </center>
 </body>

@@ -19,9 +19,10 @@
 			<h3>
 				Bienvenido Alumno: <?php echo $user?>
 			</h3>
+			<img src="../../css/logo.png"></br>
 			<a href="../Alumnos/clasesAlumno.php">
    				<input type="button" class="btn btn-info" value="Ver Clases"/>
-			</a><br>
+			</a>
 			<a href="../Alumnos/reportesAlumno.php">
    				<input type="button" class="btn btn-info" value="Ver Reportes"/>
 			</a>

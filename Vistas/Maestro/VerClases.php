@@ -29,7 +29,7 @@
         </center>
         
 
-        <a href="../Maestro/agregarClase.php" type="button" class="btn btn-success">Agregar Clase</a><br>
+        <a href="../Maestro/agregarClase.php" type="button" class="btn btn-success">Agregar Clase</a>
         <a href="../Maestro/VistaPrincipalMaestro.php" type="button" class="btn btn-info">Regresar</a>
 
     </body>

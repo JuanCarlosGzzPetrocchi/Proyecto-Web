@@ -15,7 +15,8 @@
     <center>
         <div id="signup">       
             <h3>Bienvenido Profesor <?php echo $user; ?></h3>
-            <a href="../Maestro/VerClases.php" type="button" class="btn btn-primary">Ver Clases</a><br>
+            <img src="../../css/logo.png"></br>
+            <a href="../Maestro/VerClases.php" type="button" class="btn btn-primary">Ver Clases</a>
             <a href="../Maestro/VerReportes.php" type="button" class="btn btn-primary">Ver Reportes</a>
             <form method="post">
                 <input type="submit" type="button" class="btn btn-info"  name="logout" value="Logout"/>
