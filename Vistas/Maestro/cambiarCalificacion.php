@@ -18,8 +18,8 @@
                 <label>Calificacion Actual</label>
                 <input type="text" name="calificacion" placeholder="Calificacion" value="<?php echo $cambio['calificacion'];?>"required /><br>
                  <input type="submit" type="button" class="btn btn-success" name="CambiarCalificacion" value="Cambiar"/>
+                 <?php echo $button; ?>
             </form>
-        
         </div>
     </center>
 </body>
