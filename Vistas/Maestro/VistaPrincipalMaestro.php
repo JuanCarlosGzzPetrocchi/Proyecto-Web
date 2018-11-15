@@ -1,30 +1,20 @@
-<?php
-  session_start(); 
-  $user = $_SESSION['usuarionombre']; 
-if(isset($_POST['logout'])) {
-session_destroy();
-header("Location: loginMaestro.php");
-}
-?>
+<?php include('vistaPrincipalMaestroLogic.php');?>
+
 <!DOCTYPE html">
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Index</title>
-        <link rel="stylesheet" type="text/css" href="../../css/css.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
     </head>
     <body>
     <center>
         <div id="signup">       
-            <h3>Bienvenido Professor <?php echo $_COOKIE["user"]?></h3>
-            <a href="../Maestro/VerClases.php" type="button" class="btn btn-primary" >Ver Clases</a><br>
-            <a href="../Maestro/VerReportes.php" type="button" class="btn btn-primary">Ver Reportes</a>
+            <h3>Bienvenido Professor <?php echo $user?></h3>
+            <a href="../Maestro/VerClases.php">Ver Clases</a><br>
+            <a href="../Maestro/VerReportes.php">Ver Reportes</a>
             <form method="post">
-                <input type="submit" type="button" class="btn btn-info"  name="logout" value="Logout"/>
+                <input type="submit" class="button"  name="logout" value="Logout"/>
             </form>
         </div>
     </center>

@@ -57,6 +57,6 @@ echo("Mission failed we'll get'em next time");
 ?>
         </div>
     </center>
-    <a href="../Maestro/VerReportes.php" type="button" class="btn btn-info">Regresar</a>
+      <a href="../Maestro/VerReportes.php" type="button" class="btn btn-info">Regresar</a>
 </body>
 </html>

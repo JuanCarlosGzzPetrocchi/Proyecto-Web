@@ -13,7 +13,7 @@ $masid = $_SESSION['usuarioid'];
 
 if(mysqli_query($con,"INSERT INTO clase(nombre,horario,salon,maestroid) VALUES ('$nombre','$horario','$salon',$masid)")){
 echo("clase registrado");
-header("Location: VerClases.php");
+header("Location: ../Maestro/VerClases.php");
 }
 else{
 
