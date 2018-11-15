@@ -1,5 +1,6 @@
+<?php include('agregarReporteLogic.php');?>
 
-<!DOCTYPE html">
+<!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -13,48 +14,20 @@
     <center>
         <div id="registro">       
             <h3>Registro de Reporte</h3>
-            <?php
-$con=mysqli_connect("localhost","root","root","escuela");
-include_once 'dbConnect.php';
-session_start(); 
-if($_SESSION['usuarionombre']==''){
-    header("Location: loginMaestro.php");
-}
-$masid= $_SESSION['usuarioid'];
-$query = "SELECT nombre,id FROM estudiante";
-$response = mysqli_query($con, $query);
 
-echo "<form method='post'>";
-echo "<label>Nombre del estudiante: </label><br>";
-echo "<select id='reporte' name='Estudiante'>";
-while($row = mysqli_fetch_array($response,MYSQLI_ASSOC)){
-    $nombre= $row['nombre'];
-    $idEstudiante= $row['id'];
-echo "<option value='$idEstudiante'>$nombre</option>";
-}
-echo "</select> <br>";
-echo "<label>Descripcion del incidente: </label><br>";
-echo "<textarea id='desc' name='Descripcion' placeholder='Descripcion del reporte' required/> </textarea><br>";
-echo "<input type='submit' type='button' class='btn btn-success'  name='RegistrarReporte' value='Agregar'/>";
-echo "</form>";
-
-
-if(isset($_POST['RegistrarReporte'])) {
-$descripcion = $_POST['Descripcion'];
-$Estudiante = $_POST['Estudiante'];
-echo $descripcion;
-echo $Estudiante;
-
-if(mysqli_query($con,"INSERT INTO reporte(descripcion,maestroid,estudianteid) VALUES ('$descripcion',$masid,$Estudiante)")){
-echo("Reporte registrado");
-header("Location: VerReportes.php");
-}
-else{
-echo("Mission failed we'll get'em next time");
-}
-
-}
-?>
+            <form method='post'>
+            <label>Nombre del estudiante: </label><br>
+            <select id='reporte' name='Estudiante'>
+            <?php 
+                foreach($resultado as $valor){
+                    echo $valor;
+                }  
+            ?>
+            </select> <br>
+            <label>Descripcion del incidente: </label><br>
+            <textarea id='desc' name='Descripcion' placeholder='Descripcion del reporte' required/> </textarea><br>
+            <input type='submit' type='button' class='btn btn-success'  name='RegistrarReporte' value='Agregar'/>
+            </form>   
         </div>
     </center>
       <a href="../Maestro/VerReportes.php" type="button" class="btn btn-info">Regresar</a>

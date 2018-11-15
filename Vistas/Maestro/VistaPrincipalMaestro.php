@@ -10,7 +10,7 @@
     <body>
     <center>
         <div id="signup">       
-            <h3>Bienvenido Professor <?php echo $user?></h3>
+            <h3>Bienvenido Profesor <?php echo $user; ?></h3>
             <a href="../Maestro/VerClases.php">Ver Clases</a><br>
             <a href="../Maestro/VerReportes.php">Ver Reportes</a>
             <form method="post">

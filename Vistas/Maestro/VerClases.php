@@ -1,43 +1,4 @@
-<?php
-$con=mysqli_connect("localhost","root","root","escuela");
-include_once 'dbConnect.php';
-session_start(); 
-if($_SESSION['usuarionombre']==''){
-    header("Location: loginMaestro.php");
-}
-
-$masid= $_SESSION['usuarioid'];
-$user = $_SESSION['usuario']; 
-$query = "SELECT * FROM clase WHERE maestroid= $masid";
-$response = mysqli_query($con, $query);
-
-echo "<table>";
-echo "<tr>
-    <th>Clase</th>
-    <th>Horario</th> 
-    <th>Salon</th> 
-    <th>Maestro</th>
-  </tr>";
-
-
-while($row = mysqli_fetch_array($response,MYSQLI_ASSOC)){
-$send = urlencode($row['id']);
-echo "<tr>
-
-<td name='nombre'>" .
- $row['nombre'] . 
- "</td><td name='horario'>" . $row['horario'] . 
- "</td><td ='salon'>" . $row['salon'] .
- "</td><td>" . $row['maestroid'] . 
-  "</td><td>" . "<a href='../Vistas/verEstudiantes.php?id=$send'>Ver Estudiantes</a>".
- "</td><td>" . "<a href='../Vistas/modificarClase.php?id=$send'>Modificar</a>".
- "</td><td>" . "<a href='../dataAccess/borrarclase.php?id=$send'>Borrar</a>".
-"</td></tr>";
-}
-
-echo "</table>";
-?>
-
+<?php include('verClaseLogic.php');?>
 
 <!DOCTYPE html">
 <html>
@@ -47,11 +8,25 @@ echo "</table>";
         
     </head>
     <body>
+        
+        <h3>Bienvenido Profesor <?php echo $user; ?></h3>
+        
+        <table>
+            <tr>
+                <th>Clase</th>
+                <th>Horario</th> 
+                <th>Salon</th> 
+                <th>Maestro</th>
+            </tr>
+            <?php 
+                foreach($resultado as $valor){
+                    echo $valor;
+                }  
+            ?>
+        </table>
 
+        <a href="../Maestro/agregarClase.php">Agregar Clase</a><br>
+        <a href="../Maestro/VistaPrincipalMaestro.php">Regresar</a>
 
-
-<a href="../Maestro/agregarclase.php">Agregar Clase</a><br>
-<a href="../Maestro/VistaPrincipalMaestro.php">Regresar</a>
-<h3>Bienvenido Professor <?php echo $user?> Id: <?php echo $masid ?></h3>
-
-</body>
+    </body>
+</html>

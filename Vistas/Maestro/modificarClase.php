@@ -1,31 +1,4 @@
-<?php
-$con=mysqli_connect("localhost","root","root","escuela");
-include_once 'dbConnect.php';
-
-$id = $_GET['id'];
-$query = "SELECT * FROM clase WHERE id = $id LIMIT 1";
-$response = mysqli_query($con, $query);
-$clase = mysqli_fetch_assoc($response);
-
-if(isset($_POST['ModificarClase'])) {
-$nombre = $_POST['nombre'];
-$horario = $_POST['horario'];
-$salon = $_POST['salon'];
-
-$sql = "UPDATE clase SET nombre = '$nombre', horario = '$horario', salon = '$salon' WHERE id ='$id'";
-if ($con->query($sql) === TRUE) {
-    echo "Record updated successfully";
-} else {
-    echo "Error updating record: " . $con->error;
-}
-
-
-
-}
-
-//header("Location: VerClases.php");
-
-?>
+<?php include('modificarClaseLogic.php');?>
 
 <!DOCTYPE html">
 <html>
@@ -50,9 +23,7 @@ if ($con->query($sql) === TRUE) {
                  <input type="text" name="salon" placeholder="Salon de clase" value="<?php echo $clase['salon'];?>" required /><br>
                  <input type="submit" class="button"  name="ModificarClase" value="Modificar"/>
             </form>
-
-            <a href="../Maestro/modificarCalificaciones.php">Modificar Calificaciones/Eliminar Estudiante</a><br>
-            <a href="../Maestro/agregarEstudiante.php">Agregar Estudiante</a><br>
+            
             <a href="../Maestro/VerClases.php">Regresar</a>
         </div>
     </center>
