@@ -1,4 +1,4 @@
-<?php include('modificarReporteLogic.php');?>
+<?php include('../../Controller/Maestro/modificarReporteLogic.php');?>
 
 <!DOCTYPE html">
 <html>

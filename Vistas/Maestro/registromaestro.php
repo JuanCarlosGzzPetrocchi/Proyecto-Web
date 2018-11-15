@@ -1,4 +1,4 @@
-<?php include('registromaestroLogic.php');?>
+<?php include('../../Controller/Maestro/registromaestroLogic.php');?>
 
 <!DOCTYPE html">
 <html>

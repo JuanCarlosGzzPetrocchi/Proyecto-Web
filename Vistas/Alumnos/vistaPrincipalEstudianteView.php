@@ -1,6 +1,5 @@
 <?php 
-	//include('../Controller/Alumno/vistaPrincipalEstudianteLogic.php');
-	include('vistaPrincipalEstudianteLogic.php');
+	include('../../Controller/Alumno/vistaPrincipalEstudianteLogic.php');
 ?>
 
 <!DOCTYPE html>

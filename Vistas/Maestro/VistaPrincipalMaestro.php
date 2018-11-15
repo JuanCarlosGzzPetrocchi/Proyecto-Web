@@ -1,4 +1,4 @@
-<?php include('vistaPrincipalMaestroLogic.php');?>
+<?php include('../../Controller/Maestro/vistaPrincipalMaestroLogic.php');?>
 
 <!DOCTYPE html">
 <html>

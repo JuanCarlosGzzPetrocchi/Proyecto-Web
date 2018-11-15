@@ -1,4 +1,4 @@
-<?php include('verClaseLogic.php');?>
+<?php include('../../Controller/Maestro/verClaseLogic.php');?>
 
 <!DOCTYPE html">
 <html>

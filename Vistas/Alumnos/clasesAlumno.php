@@ -1,4 +1,4 @@
-<?php include('claseAlumnoLogic.php');?>
+<?php include('../../Controller/Alumno/claseAlumnoLogic.php');?>
 
 <!DOCTYPE html">
 <html>

@@ -1,4 +1,4 @@
-<?php include('modificarClaseLogic.php');?>
+<?php include('../../Controller/Maestro/modificarClaseLogic.php');?>
 
 <!DOCTYPE html">
 <html>

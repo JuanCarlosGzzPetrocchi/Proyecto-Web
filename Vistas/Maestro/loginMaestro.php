@@ -1,4 +1,4 @@
-<?php include('loginMaestroLogic.php');?>
+<?php include('../../Controller/Maestro/loginMaestroLogic.php');?>
 
 <!DOCTYPE html">
 <html>

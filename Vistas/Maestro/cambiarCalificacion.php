@@ -1,4 +1,4 @@
-<?php include('CambiarCalificacionLogic.php');?>
+<?php include('../../Controller/Maestro/CambiarCalificacionLogic.php');?>
 
 <!DOCTYPE html">
 <html>

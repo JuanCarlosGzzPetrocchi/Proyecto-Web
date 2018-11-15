@@ -1,4 +1,4 @@
-<?php include('agregarEstudianteaClaseLogic.php');?>
+<?php include('../../Controller/Maestro/agregarEstudianteaClaseLogic.php');?>
 
 <!DOCTYPE html>
 <html>

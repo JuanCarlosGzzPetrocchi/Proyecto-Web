@@ -1,4 +1,4 @@
-<?php include('agregarClaseLogic.php');?>
+<?php include('../../Controller/Maestro/agregarClaseLogic.php');?>
 
 <!DOCTYPE html">
 <html>

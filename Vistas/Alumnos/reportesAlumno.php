@@ -1,4 +1,4 @@
-<?php include('reportesAlumnoLogic.php');?>
+<?php include('../../Controller/Alumno/reportesAlumnoLogic.php');?>
 
 
 <!DOCTYPE html">
