@@ -26,7 +26,7 @@
     <form class="login-form" method="post">
       <input type="text" name="nombre" placeholder="username"/>
       <input type="password" name ="clave" placeholder="password"/>
-      <input type="submit"  type="button"  name="loginMaestro" value="Entrar"/>
+      <input type="submit"  type="button"  name="loginAlumno" value="Entrar"/>
     </form>
   </div>
 </div>
